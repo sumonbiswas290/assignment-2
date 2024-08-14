@@ -181,6 +181,9 @@ header{
     padding: 0;
 }
 
+.change_habits{
+    margin-bottom: 58px;
+}
 .common_title{
     font-size: 3rem;
     font-weight: 900;
@@ -232,23 +235,31 @@ header{
     background-image: url(../assets/images/image\ 5.png);
 }
 
-.main1st_l{
-    width: 390px;
-    margin-right: 165px;
+.main2nd{
+    margin-top: 100px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    width: 1060px;
+    justify-content: space-between;
 }
-.main1st_l .habit_topic_p{
+.main2nd_l{
+    width: 390px;
+    margin-left: 50px;
+    align-items: start;
+}
+.main2nd_l .habit_topic_p{
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+.main2nd_l .habit_topic_p{
     text-align: left;
 }
 
 
 
-/* .main1st_l .jcn{
-    justify-content: left;
-} */
 
 
-
-.main1st_r{
+.main2nd_r{
     width: 366px;
     height: 312px;
     border-radius: 18px;
@@ -258,6 +269,54 @@ header{
     background-position: -550px -130px;
 }
 
+.team{
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+.team_img{
+    border-radius: 18px;
+    width: 326px;
+    height: 270px;
+}
+.tm1{
+    background: url(../assets/images/trainer1.png);
+    background-size: 100%;
+}
+.tm2{
+    background-image: url(../assets/images/trainer2.png);
+    background-size: 100%;
+}
+.tm3{
+    background-image: url(../assets/images/trainer3.png);
+    background-size: 100%;
+}
+.tm4{
+    background-image: url(../assets/images/trainer4.png);
+    background-size: 150%;
+    background-position: -80px 0;
+}
+.tm5{
+    background-image: url(../assets/images/trainer5.png);
+    background-size: 100%;
+    background-position: 0 -25px;
+}
+.tm6{
+    background-image: url(../assets/images/trainer6.png);
+    background-size: 100%;
+}
+.member_name{
+    margin-top: 210px;
+    margin-left: 20px;
+}
+.team .habit_topic_p{
+    text-align: left;
+    margin-left: 20px;
+}
 
 
 
@@ -268,7 +327,11 @@ header{
     .ht .manu , .d{
         display: none;
     }
-    body{
+    .main2nd, .team{
+        display: flex;
+        flex-direction: column;
+    }
+    body, .hb .first{
         width: 100%;
     }
     header{
@@ -300,21 +363,23 @@ header{
         margin-top: 4px;
     }
     .jcn_m{
-        padding: 16px 50px;
+        font-size: 3.5vw;
+        padding: 2.5vw 10vw;
         border-radius: 42px;
         background: rgb(230, 83, 60);
-        margin-right: 14px;
-        margin-left: 10px;
+        margin-right: 5.5vw;
+        margin-left: 5.5vw;
     }
     .dw{
-        padding: 16px 30px;
+        font-size: 3.5vw;
+        padding:  2.5vw 6vw;
     }
     .secound img{
         margin-top: 48px;
         margin-left: 20px;
     }
     .secound .card1{
-        left: 260px;
+        left: 55vw;
         top: 510px;
         border-radius: 9px;
         padding: 13px 18px 12px;
@@ -326,7 +391,7 @@ header{
         font-size: 0.6rem;
     }
     .secound .card2{
-        left: 32px;
+        left: 8vw;
         top: 700px;
         padding: 18px;
         border-radius: 9px;
@@ -338,7 +403,7 @@ header{
         font-size: 0.75rem;
     }
     .common_title{
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .habit_p{
         width: 340px;
@@ -351,7 +416,22 @@ header{
         margin-bottom: 40px;
         align-items: center;
     }
-    .hb .first{
-        width: 100%;
+    .main2nd{
+        margin-top: 66px;
+        width: 90vw;
+    }
+    .main2nd_l{
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 70vw;
+    }
+    .main2nd_r{
+        width: 75vw;
+        height: 70vw;
+        background-position: -465px -130px;
+    }
+    .main3rd{
+        width: 75vw;
     }
 }
