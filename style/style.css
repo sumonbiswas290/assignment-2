@@ -318,6 +318,58 @@ header{
     margin-left: 20px;
 }
 
+footer{
+    margin-top: 66px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+.footer_info{
+    padding: 70px 190px;
+}
+.footer_info .habit_topic_p{
+    text-align: left;
+}
+.f_info1{
+    width: 35%;
+    margin-right: 15%;
+    align-items: start;
+}
+.f_info2 .f_title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.f_info2 .habit_topic_p{
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+.f_logo{
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    font-size: 4.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.f_info2{
+    width: 25%;
+    align-items: start;
+}
+footer li{
+    list-style: none;
+}
+.h_line{
+    width: 1050px;
+    height: 0;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
+    margin-bottom: 36px;
+}
+.c_right{
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 35px;
+}
+
 
 
 
@@ -327,7 +379,10 @@ header{
     .ht .manu , .d{
         display: none;
     }
-    .main2nd, .team{
+    .m{
+        display: inline;
+    }
+    .main2nd, .team, .footer_info{
         display: flex;
         flex-direction: column;
     }
@@ -433,5 +488,23 @@ header{
     }
     .main3rd{
         width: 75vw;
+    }
+    .footer_info{
+        align-items: start;
+        padding: 45px 20px 0;
+    }
+    .f_info1{
+        width: 85%;
+    }
+    .f_info2{
+        width: 85%;
+        margin-top: 30px;
+    }
+    .h_line{
+        width: 90vw;
+        height: 0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 70px;
+        margin-bottom: 40px;
     }
 }
