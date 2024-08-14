@@ -21,8 +21,8 @@ a{
     justify-content: center;
     align-items: center;
 }
-.grid{
-    display: grid;
+.flex-c{
+    flex-direction: column;
 }
 
 header{
@@ -153,20 +153,101 @@ header{
     background: rgb(230, 83, 60);
 }
 .secound .card2 .p_btn_t{
-    border-top: ;
+    width: 0; 
+    height: 0;
+    margin-top: 10px; 
+    margin-left: 13px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  
+  border-left: 18px solid white;
 }
 .secound .card2 span{
     color: rgb(250, 250, 249);
     font-family: Inter;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     margin: 0;
     padding: 0;
 }
 .secound .card2 p{
     color: rgba(239, 237, 232, 0.65);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0;
     padding: 0;
+}
+
+.common_title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.habit_p{
+    text-align: center;
+    margin-top: 14px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.grid-c4-1{
+    width: 1044px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.habit_topic{
+    width: 231px;
+}
+.habit_img{
+    height: 180px;
+    width: 180px;
+    border-radius: 500px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.habit_topic_title{
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.habit_topic_p{
+    margin-top: 6px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.t1{
+    background-image: url(../assets/images/image\ 3.png);
+}
+.t2{
+    background-image: url(../assets/images/image\ 2.png);
+}
+.t3{
+    background-image: url(../assets/images/image\ 4.png);
+}
+.t4{
+    background-image: url(../assets/images/image\ 5.png);
+}
+
+.main1st_l{
+    width: 390px;
+}
+.main1st_l .habit_topic_p{
+    text-align: left;
+}
+.main1st_l .jcn{
+    justify-content: left;
+}
+.main1st_r{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    margin: 30px;
+    background-image: url(../assets/images/run.jpg);
+    background-size: 315%;
+    background-position: -550px -130px;
+}
+
+@media screen {
+    
 }
