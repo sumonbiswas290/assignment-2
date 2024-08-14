@@ -370,6 +370,72 @@ footer li{
     margin-bottom: 35px;
 }
 
+.bmi_name{
+    margin-top: 65px;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.bmi_cal{
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(34, 34, 34);
+}
+.bmi_p{
+    margin-top: 14px;
+    margin-bottom: 88px;
+}
+.cal_chart{
+    margin-left: 189px;
+    margin-top: 53px;
+}
+table {
+    margin-top: 52px;
+    border-collapse: collapse;
+  }
+th, td{
+    padding: 15px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+td{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.cal{
+    margin-right: 189px;
+}
+
+.f1, .f2, .f3, .f4, .f5{
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+.f1{
+    grid-area: f1;
+}
+.f2{
+    grid-area: f2;
+}
+.f3{
+    grid-area: f3;
+}
+.f4{
+    grid-area: f4;
+}
+.f5{
+    grid-area: f5;
+}
+.form{
+    display: grid;
+    gap: 12px;
+    grid-template-areas: 
+    "f1 f2"
+    "f3 f4"
+    "f5 f5"
+    ;
+}
+
 
 
 
