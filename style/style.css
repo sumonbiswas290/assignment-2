@@ -28,6 +28,10 @@ a{
 .flex-c{
     flex-direction: column;
 }
+.fsb{
+    display: flex;
+    justify-content: space-between;
+}
 
 header{
     padding: 57px 190px 0;
@@ -390,9 +394,11 @@ footer li{
 }
 table {
     margin-top: 52px;
+    margin-bottom: 132px;
     border-collapse: collapse;
   }
 th, td{
+    font-weight: 500;
     padding: 15px 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
@@ -403,13 +409,27 @@ td{
     color: rgba(255, 255, 255, 0.5);
 }
 .cal{
+    align-items: start;
     margin-right: 189px;
 }
-
+.cal_p{
+    margin-top: 14px;
+    margin-bottom: 34px;
+    width: 490px;
+    text-align: left;
+}
 .f1, .f2, .f3, .f4, .f5{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
     padding: 12px 40px 12px 20px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
+}
+.f6{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
 }
 .f1{
     grid-area: f1;
@@ -424,6 +444,7 @@ td{
     grid-area: f4;
 }
 .f5{
+    width: 480px;
     grid-area: f5;
 }
 .form{
@@ -435,6 +456,23 @@ td{
     "f5 f5"
     ;
 }
+.cal_b{
+    margin-top: 34px;
+    margin-bottom: 50px;
+    width: 150px;
+    text-align: center;
+}
+.arrow {
+    margin-top: 2px;
+    border: solid rgba(255, 255, 255, 0.6);
+    height: 3px;
+    width: 3px;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 
 
 
@@ -442,18 +480,23 @@ td{
 
 
 @media screen and (max-width: 576px) {
-    .ht .manu , .d{
+    .ht .manu, .d{
         display: none;
     }
     .m{
         display: inline;
     }
-    .main2nd, .team, .footer_info{
+    .main2nd, .team, .footer_info, .bmi_cal{
         display: flex;
         flex-direction: column;
     }
     body, .hb .first{
         width: 100%;
+    }
+    .bmi_cal, .bmi_name, .bmi_p{
+        text-align: left;
+        justify-content: left;
+        align-items: start;
     }
     header{
         padding: 50px 20px 0;
@@ -463,7 +506,6 @@ td{
         width: 100%;
         background-color: rgb(8, 8, 8);
     }
-    
     .ht{
         justify-content: space-between;
     }
@@ -514,7 +556,7 @@ td{
     .secound .card2{
         left: 8vw;
         top: 700px;
-        padding: 18px;
+        padding: 14px 17px 14px;
         border-radius: 9px;
     }
     .secound .card2 span{
@@ -522,6 +564,20 @@ td{
     }
     .secound .card2 p{
         font-size: 0.75rem;
+    }
+    .secound .card2 .p_btn_s{
+        width: 30px;
+        height: 30px;
+        margin-right: 6px;
+    }
+    .secound .card2 .p_btn_t{
+        width: 0; 
+        height: 0;
+        margin-top: 7.5px; 
+        margin-left: 10px;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 12px solid white;
     }
     .common_title{
         font-size: 2.2rem;
@@ -534,7 +590,6 @@ td{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 40px;
         align-items: center;
     }
     .main2nd{
@@ -573,4 +628,44 @@ td{
         margin-top: 70px;
         margin-bottom: 40px;
     }
+    .cal_chart{
+        margin-left: 5vw;
+        margin-top: 34px;
+        width: 76vw;
+    }
+    table{
+        margin-bottom: 0;
+        table-layout: auto;
+    }
+    .f1, .f2, .f3, .f4{
+        width: auto;
+    }
+    .f5{
+        width: 76vw;
+    }
+    .cal{
+        width: 90%;
+        margin-right: auto;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .cal_p{
+        width: 100%;
+    }
+    .chart_name{
+        margin-top: 0;
+    }
+    .cal_name{
+        margin-top: 42px;
+    }
+    .bmi_title, .bmi_p{
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    .bmi_p{
+        margin-bottom: 32px;
+    }
+    
+    
+
 }
